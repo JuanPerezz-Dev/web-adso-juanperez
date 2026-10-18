@@ -1,0 +1,103 @@
+/*
+Pregunta 1: ¿Por qué es mejor un solo styles.css que poner los estilos en cada página?
+Es mejor porque permite mantener un diseño uniforme en todo el sitio, facilita hacer cambios desde un solo archivo sin tener que editar cada página por separado, y hace que la web cargue más rápido ya que el navegador guarda el archivo CSS en caché.
+
+Pregunta 2: Si un h2 tiene una regla de etiqueta y otra de clase con colores distintos, ¿cuál gana y por qué?
+Gana la regla de clase, porque en CSS las clases tienen mayor especificidad (prioridad) que los selectores de etiqueta.
+*/
+
+
+body {
+    background-color: #f9f3fc;
+    color: #2d2335;
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 20px 50px;
+}
+
+header h1 {
+    color: #5b2c6f;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+
+nav a {
+    color: #6a1b9a;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 15px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid #d7bde2;
+}
+
+
+
+h1, h2 {
+    color: #5b2c6f;
+}
+
+h2 {
+    font-size: 22px;
+    border-bottom: 2px solid #ff7a00;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 650px;
+    margin: 15px 0 20px 0;
+    background-color: #ffffff;
+}
+
+caption {
+    font-weight: bold;
+    color: #5b2c6f;
+    font-size: 18px;
+}
+
+
+th, td {
+    border: 1px solid #d7bde2;
+    padding: 10px 14px;
+
+}
+
+
+th {
+    background-color: #6a1b9a;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+
+p, li {
+    font-size: 16px;
+  
+}
+
+ul {
+    margin-left: 20px;
+}
+
+
+
+.logo {
+    border-radius: 12px;
+    margin: 10px 0;
+}
+
+
+footer { 
+    color: #7d6b88;
+    font-size: 14px;
+}
+
+a {
+    color: #6a1b9a;
+    text-decoration: none;
+}
+hr {
+    color: #7d6b88;
+}
