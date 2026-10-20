@@ -1,0 +1,127 @@
+/*
+Diferencia entre padding y margin:
+Padding es el espacio interior entre el contenido y el borde de la caja.
+Margin es el espacio exterior que separa la caja de otros elementos.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #2d3748;
+}
+
+.encabezado {
+    text-align: center;
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.encabezado h1 {
+    margin: 0 0 5px 0;
+    color: #2b6cb0;
+    font-size: 36px;
+}
+
+.subtitulo {
+    margin: 0 0 15px 0;
+    color: #4a5568;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.frase {
+    margin: 15px auto 0 auto;
+    max-width: 600px;
+    font-style: italic;
+    color: #718096;
+    background-color: #ebf8ff;
+    padding: 12px 18px;
+    border-radius: 8px;
+    border-left: 4px solid #3182ce;
+}
+
+.contenedor {
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.contenedor h2 {
+    text-align: center;
+    color: #2b6cb0;
+    margin-bottom: 25px;
+}
+
+.galeria-retos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    padding: 25px 20px;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    width: 260px;
+    text-align: center;
+}
+
+.tarjeta h3 {
+    margin: 0 0 10px 0;
+    color: #3182ce;
+    font-size: 20px;
+}
+
+.reto-titulo {
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    font-size: 14px;
+    color: #718096;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.boton-enlace {
+    display: inline-block;
+    background-color: #3182ce;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.boton-enlace:hover {
+    background-color: #2b6cb0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #718096;
+    font-size: 14px;
+}
+
+footer a {
+    color: #3182ce;
+    text-decoration: none;
+}

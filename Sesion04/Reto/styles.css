@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 2rem 1rem;
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #fff5f5;
+}
+
+.tarjeta {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid #fed7d7;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0 4px 16px rgba(229, 62, 62, 0.2);
+    text-align: center;
+}
+
+.avatar {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    background-color: rgb(254, 226, 226);
+    font-size: 3rem;
+    line-height: 96px;
+}
+
+#nombre {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.rol {
+    margin: 0.25rem 0;
+    color: rgb(197, 48, 48);
+    font-weight: 600;
+}
+
+.ciudad {
+    margin: 0 0 1.5rem;
+    color: rgb(160, 60, 60);
+}
+
+h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+.habilidades {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+}
+
+.habilidades li {
+    display: inline-block;
+    margin: 0.25rem;
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+    background-color: #fff5f5;
+    color: rgb(155, 44, 44);
+    border: 1px solid #feb2b2;
+    font-size: 0.9rem;
+}
+
+.boton {
+    padding: 0.7rem 1.7rem;
+    border: 2px solid rgb(229, 62, 62);
+    border-radius: 6px;
+    background-color: rgb(229, 62, 62);
+    color: #ffffff;
+    font: inherit;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: rgb(197, 48, 48);
+}
+
+.boton:focus-visible {
+    outline: 3px solid #fc8181;
+    outline-offset: 3px;
+}
+
+body.oscuro {
+    background-color: #1a0505;
+    color: #ffffff;
+}
+
+body.oscuro .tarjeta {
+    background-color: #2d0f0f;
+    border-color: #e53e3e;
+    box-shadow: none;
+}
+
+body.oscuro #nombre {
+    color: #ffffff;
+}
+
+body.oscuro .rol {
+    color: #feb2b2;
+}
+
+body.oscuro .ciudad {
+    color: #fed7d7;
+}
+
+body.oscuro h2 {
+    color: #ffffff;
+}
+
+body.oscuro .habilidades li {
+    background-color: #4a1515;
+    color: #fed7d7;
+    border-color: #742a2a;
+}
+
+body.oscuro .boton {
+    background-color: #e53e3e;
+    color: #ffffff;
+    border-color: #fc8181;
+}
+
+body.oscuro .boton:hover {
+    background-color: #f56565;
+}
