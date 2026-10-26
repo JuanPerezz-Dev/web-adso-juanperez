@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesion05</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Registro de la Biblioteca</h1>
+        <form action="#" class="Formulario">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <div class="campo">
+                <label for="Nombre">
+                    Nombre Completo
+                </label>
+                <input type="text" id="Nombre" name="Nombre" required placeholder="Nombre">
+            </div>
+
+            <div class="campo">
+                <label for="documento">
+                    Documento
+                </label>
+                <input type="text" id="documento" name="documento" required>
+            </div>
+            
+
+            <div class="campo">
+                <label for="correo">
+                    Correo Electronico
+                </label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+
+            <div class="campo">
+                <label for="Nacimiento">
+                    Fecha de Nacimiento
+                </label>
+                <input type="date" id="Nacimiento" name="Nacimiento" min="1900-01-01">
+            </div>
+
+            <div class="campo">
+                <label for="clave">
+                    Contraseña
+                </label>
+                <input type="password" id="clave" name="clave" required minlength="8">
+            </div>
+            
+            <div class="campo">
+                <label for="edad">
+                    Edad
+                </label>
+                <input type="number" id="edad" name="edad" min="0" max="120">
+            </div>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Tu Perfil</legend>
+            <div class="campo">
+                <label for="tipo">
+                    Tipo de Usuario
+                </label>
+                <select name="tipo" id="tipo" required>
+                    <option value="">Elige una opcion</option>
+                    <option value="Aprendiz">Aprendiz</option>
+                    <option value="Instructor">Instructor</option>
+                    <option value="Visitante">Visitante</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <legend>Sede</legend>
+                <label for="norte" class="opcion">
+                    <input type="radio" name="sede" id="norte" value="norte" checked>Norte
+                </label>
+
+                <label for="sur" class="opcion">
+                    <input type="radio" name="sede" id="sur" value="sur">Sur
+                </label>
+
+                <label for="centro" class="opcion">
+                    <input type="radio" name="sede" id="centro" value="centro">Centro
+                </label>
+
+            </fieldset>
+            <fieldset class="grupo">
+                <legend>Temas que te interesan</legend>
+                <label for="Novelas" class="opcion">
+                    <input type="checkbox" name="Temas" id="Novelas" value="Novelas" >Novelas
+                </label>
+
+                <label for="Ciencia" class="opcion">
+                    <input type="checkbox" name="Temas" id="Ciencia" value="Ciencia">Ciencia
+                </label>
+
+                <label for="Tecnologia" class="opcion">
+                    <input type="checkbox" name="Temas" id="Tecnologia" value="Tecnologia" >Tecnologia
+                </label>
+
+            </fieldset>
+            <div class="campo">
+                <label for="comentario">¿Que libro te gustaria que tuvieramos?</label>
+                <textarea name="comentario" id="comentario" 
+                rows="1"></textarea>
+            </div>
+        </fieldset>
+
+        <button type="submit" class="boton">Registrarse</button>
+        </form>
+    </main>
+</body>
+</html>

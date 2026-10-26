@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Inscripción SENA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="contenedor">
+    <form id="formInscripcion" class="formulario" action="#">
+      <h1>Formulario de Inscripción SENA</h1>
+
+      <fieldset>
+        <legend>Datos Personales</legend>
+
+        <div class="campo">
+          <label for="nombre">Nombre Completo</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Ejemplo: Juan Pérez" minlength="3">
+        </div>
+
+        <div class="campo">
+          <label for="documento">Documento de Identidad</label>
+          <input type="text" id="documento" name="documento" required inputmode="numeric" minlength="6" maxlength="10" placeholder="Ejemplo: 1020304050">
+        </div>
+
+        <div class="campo">
+          <label for="correo">Correo Electrónico</label>
+          <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
+        </div>
+
+        <div class="campo">
+          <label for="telefono">Celular</label>
+          <input type="tel" id="telefono" name="telefono" required pattern="3[0-9]{9}" title="10 dígitos que empiecen por 3" maxlength="10" placeholder="Ejemplo: 3001234567">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Inscripción</legend>
+
+        <div class="campo">
+          <label for="programa">Programa</label>
+          <select name="programa" id="programa" required>
+            <option value="">Elige una opción</option>
+            <option value="adso">Análisis y Desarrollo de Software</option>
+            <option value="ingles">Inglés</option>
+            <option value="animacion">Animación 3D</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <span class="label-titulo">Jornada</span>
+          <div class="opciones">
+            <label for="manana" class="opcion">
+              <input type="radio" name="jornada" id="manana" value="manana" required> Mañana
+            </label>
+            <label for="tarde" class="opcion">
+              <input type="radio" name="jornada" id="tarde" value="tarde"> Tarde
+            </label>
+            <label for="noche" class="opcion">
+              <input type="radio" name="jornada" id="noche" value="noche"> Noche
+            </label>
+          </div>
+        </div>
+
+        <div class="campo-terminos">
+          <label for="tyc" class="opcion">
+            <input type="checkbox" id="tyc" name="tyc" required> Autorizo términos y condiciones
+          </label>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="boton">Registrarse</button>
+    </form>
+  </main>
+</body>
+</html>
