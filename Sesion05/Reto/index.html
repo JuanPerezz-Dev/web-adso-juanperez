@@ -15,31 +15,35 @@
       <h1>Formulario de Inscripción SENA</h1>
 
       <fieldset>
-        <legend>Datos Personales</legend>
+        <legend>Datos personales</legend>
 
         <div class="campo">
           <label for="nombre">Nombre Completo</label>
-          <input type="text" id="nombre" name="nombre" required placeholder="Ejemplo: Juan Pérez" minlength="3">
+          <input type="text" id="nombre" name="nombre" required minlength="3" placeholder="Ejemplo: Juan Pérez">
+          <small id="error-nombre" class="error"></small>
         </div>
 
         <div class="campo">
           <label for="documento">Documento de Identidad</label>
-          <input type="text" id="documento" name="documento" required inputmode="numeric" minlength="6" maxlength="10" placeholder="Ejemplo: 1020304050">
+          <input type="text" id="documento" name="documento" required pattern="[0-9]{6,10}" title="Debe contener entre 6 y 10 dígitos numéricos" inputmode="numeric" placeholder="Ejemplo: 1020304050">
+          <small id="error-documento" class="error"></small>
         </div>
 
         <div class="campo">
           <label for="correo">Correo Electrónico</label>
           <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
+          <small id="error-correo" class="error"></small>
         </div>
 
         <div class="campo">
           <label for="telefono">Celular</label>
           <input type="tel" id="telefono" name="telefono" required pattern="3[0-9]{9}" title="10 dígitos que empiecen por 3" maxlength="10" placeholder="Ejemplo: 3001234567">
+          <small id="error-telefono" class="error"></small>
         </div>
       </fieldset>
 
       <fieldset>
-        <legend>Inscripción</legend>
+        <legend>Curso</legend>
 
         <div class="campo">
           <label for="programa">Programa</label>
@@ -49,6 +53,7 @@
             <option value="ingles">Inglés</option>
             <option value="animacion">Animación 3D</option>
           </select>
+          <small id="error-programa" class="error"></small>
         </div>
 
         <div class="campo">
@@ -64,17 +69,21 @@
               <input type="radio" name="jornada" id="noche" value="noche"> Noche
             </label>
           </div>
+          <small id="error-jornada" class="error"></small>
         </div>
 
-        <div class="campo-terminos">
-          <label for="tyc" class="opcion">
-            <input type="checkbox" id="tyc" name="tyc" required> Autorizo términos y condiciones
+        <div class="campo campo-terminos">
+          <label for="terminos" class="opcion">
+            <input type="checkbox" id="terminos" name="terminos" required> Autorizo el tratamiento de mis datos personales
           </label>
+          <small id="error-terminos" class="error"></small>
         </div>
       </fieldset>
 
       <button type="submit" class="boton">Registrarse</button>
     </form>
+
+    <section id="resumen"></section>
   </main>
 </body>
 </html>

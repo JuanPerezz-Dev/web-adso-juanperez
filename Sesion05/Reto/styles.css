@@ -46,7 +46,7 @@ legend {
 }
 
 .campo {
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .campo label,
@@ -58,19 +58,62 @@ legend {
   color: #4a5568;
 }
 
+/* Campos de ancho completo */
+input:not([type="radio"]):not([type="checkbox"]),
+select {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border: 1.5px solid #cbd5e0;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: #2d3748;
+  background-color: #ffffff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
 
+/* Foco visible */
+input:focus,
+select:focus,
+input:focus-visible,
+select:focus-visible {
+  outline: none;
+  border-color: #c53030;
+  box-shadow: 0 0 0 3.5px rgba(197, 48, 48, 0.25);
+}
 
+/* Rojo con :user-invalid y la clase .invalido */
 input:user-invalid,
-select:user-invalid {
+select:user-invalid,
+.invalido,
+input.invalido,
+select.invalido {
   border-color: #e53e3e;
   background-color: #fff5f5;
 }
 
+.error {
+  display: block;
+  min-height: 1.2rem;
+  color: #e53e3e;
+  font-size: 0.82rem;
+  margin-top: 0.25rem;
+}
+
+.opciones {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
 
 .opcion {
   font-size: 0.95rem;
   color: #4a5568;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 .opcion input {
@@ -94,6 +137,7 @@ select:user-invalid {
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s, transform 0.1s;
 }
 
 .boton:hover {
@@ -101,3 +145,15 @@ select:user-invalid {
   border-color: #c53030;
 }
 
+.boton:active {
+  transform: translateY(1px);
+}
+
+.boton:focus-visible {
+  outline: 2px solid #c53030;
+  outline-offset: 3px;
+}
+
+#resumen {
+  margin-top: 1.5rem;
+}
