@@ -1,0 +1,232 @@
+/*
+Diferencia entre justify-content y align-items (Flexbox):
+
+- justify-content: Alinea y distribuye los elementos a lo largo del 
+  EJE PRINCIPAL (main axis). Por defecto (cuando flex-direction es row), 
+  controla la alineación horizontal (ej: flex-start, center, flex-end, 
+  space-between, space-around).
+
+- align-items: Alinea los elementos a lo largo del EJE TRANSVERSAL 
+  o secundario (cross axis). Por defecto (cuando flex-direction es row), 
+  controla la alineación vertical (ej: flex-start, center, flex-end, 
+  stretch, baseline).
+
+*/
+
+body {
+    background-color: #f9f3fc;
+    color: #2d2335;
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 20px 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #5b2c6f;
+    font-size: 32px;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: #6a1b9a;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid #d7bde2;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #6a1b9a;
+    color: #ffffff;
+}
+
+h1, h2 {
+    color: #5b2c6f;
+}
+
+h2 {
+    font-size: 22px;
+    border-bottom: 2px solid #ff7a00;
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 650px;
+    margin: 15px 0 20px 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(91, 44, 111, 0.06);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+caption {
+    font-weight: bold;
+    color: #5b2c6f;
+    font-size: 18px;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+th, td {
+    border: 1px solid #d7bde2;
+    padding: 10px 14px;
+}
+
+th {
+    background-color: #6a1b9a;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+p, li {
+    font-size: 16px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+.logo {
+    border-radius: 12px;
+    margin: 10px 0;
+}
+
+
+
+.formulario-contacto {
+    max-width: 650px;
+    background-color: #ffffff;
+    border: 1px solid #d7bde2;
+    border-radius: 8px;
+    padding: 24px;
+    margin: 15px 0 25px 0;
+    box-shadow: 0 4px 12px rgba(91, 44, 111, 0.08);
+}
+
+.formulario-contacto .campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.formulario-contacto label {
+    font-weight: 600;
+    color: #5b2c6f;
+    font-size: 14.5px;
+    margin-bottom: 6px;
+}
+
+.formulario-contacto .obligatorio {
+    color: #ff7a00;
+    font-weight: bold;
+}
+
+.formulario-contacto input,
+.formulario-contacto select,
+.formulario-contacto textarea {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 14.5px;
+    padding: 10px 14px;
+    border: 1.5px solid #d7bde2;
+    border-radius: 6px;
+    background-color: #fdfbfe;
+    color: #2d2335;
+    box-sizing: border-box;
+    width: 100%;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.formulario-contacto textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto select:focus,
+.formulario-contacto textarea:focus {
+    outline: none;
+    border-color: #6a1b9a;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3.5px rgba(106, 27, 154, 0.22);
+}
+
+.formulario-contacto input::placeholder,
+.formulario-contacto textarea::placeholder {
+    color: #9d8ca5;
+}
+
+.boton-enviar {
+    background-color: #6a1b9a;
+    color: #ffffff;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 11px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(106, 27, 154, 0.25);
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.boton-enviar:hover {
+    background-color: #5b2c6f;
+    box-shadow: 0 4px 10px rgba(91, 44, 111, 0.3);
+    transform: translateY(-1px);
+}
+
+.boton-enviar:active {
+    transform: translateY(0);
+}
+
+.boton-enviar:focus-visible {
+    outline: 2px solid #ff7a00;
+    outline-offset: 3px;
+}
+
+footer { 
+    color: #7d6b88;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+a {
+    color: #6a1b9a;
+    text-decoration: none;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #d7bde2;
+    margin: 25px 0 15px 0;
+}
+
+@media (max-width: 680px) {
+    body {
+        margin: 15px 20px;
+    }
+    
+    .formulario-contacto {
+        padding: 16px;
+    }
+}

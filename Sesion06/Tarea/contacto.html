@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneStore - Contacto</title>
+    <link rel="shortcut icon" href="img/Cell.webp" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PhoneStore Tecnología</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>        
+            <a href="contacto.html">Contacto</a>        
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contáctanos</h2>
+            <table>
+                <caption>Canales de Atención</caption>
+                <thead>
+                    <tr>
+                        <th colspan="2">Información de Contacto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Horario:</strong></td>
+                        <td>7:00 AM - 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dirección:</strong></td>
+                        <td>SENA Pedregal</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/wpp.png" alt="WhatsApp" width="24" height="24"></td>
+                        <td><a href="https://wa.me/573204206340" target="_blank">3204206340</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Envíanos un Mensaje</h2>
+
+            <!-- 
+                ¿Para qué sirve el atributo name?
+                El atributo "name" sirve para identificar y darle nombre al dato que el usuario ingresa en cada campo del formulario.
+                Cuando se envía el formulario (mediante métodos como GET o POST), los datos viajan hacia el servidor en forma de pares clave=valor (por ejemplo: nombre=Juan&correo=juan@gmail.com).
+                El servidor utiliza el valor del atributo "name" como la clave para reconocer cuál dato corresponde a cuál campo y así poder procesarlo o guardarlo.
+                A diferencia del atributo "id" (que sirve para vincular la etiqueta <label>, aplicar estilos CSS o manejar elementos con JavaScript), el atributo "name" es fundamental para la transmisión y recepción de la información en el backend.
+            -->
+
+            <form action="#" method="POST" class="formulario-contacto">
+                <div class="campo">
+                    <label for="nombre">Nombre Completo: <span class="obligatorio">*</span></label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre y apellido">
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo Electrónico: <span class="obligatorio">*</span></label>
+                    <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
+                </div>
+
+                <div class="campo">
+                    <label for="celular">Celular (opcional):</label>
+                    <input type="tel" id="celular" name="celular" placeholder="Ej: 3201234567">
+                </div>
+
+                <div class="campo">
+                    <label for="motivo">Motivo: <span class="obligatorio">*</span></label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="">Selecciona un motivo</option>
+                        <option value="Pedido">Pedido</option>
+                        <option value="Pregunta">Pregunta</option>
+                        <option value="Queja">Queja</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje: <span class="obligatorio">*</span></label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+
+                <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+    <footer>
+        <p>PhoneStore-Tecnologia: Sena Pedregal</p>
+    </footer>
+</body>
+</html>
