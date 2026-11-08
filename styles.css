@@ -4,13 +4,18 @@ Padding es el espacio interior entre el contenido y el borde de la caja.
 Margin es el espacio exterior que separa la caja de otros elementos.
 */
 
+/*
+¿Qué es Mobile First?
+Mobile First es una metodología de diseño y desarrollo web donde se escriben primero los estilos pensando en dispositivos móviles (pantallas pequeñas) como base, sin necesidad de media queries. A partir de esa estructura base, se van añadiendo media queries con min-width para adaptar y enriquecer el diseño progresivamente en pantallas más grandes como tabletas y computadores.
+*/
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    padding: 20px;
+    padding: 15px;
     font-family: "Poppins", Arial, sans-serif;
     background-color: #f0f4f8;
     color: #2d3748;
@@ -20,8 +25,8 @@ body {
     text-align: center;
     background-color: #ffffff;
     max-width: 800px;
-    margin: 20px auto;
-    padding: 30px 20px;
+    margin: 10px auto 20px auto;
+    padding: 25px 15px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
@@ -29,13 +34,13 @@ body {
 .encabezado h1 {
     margin: 0 0 5px 0;
     color: #2b6cb0;
-    font-size: 36px;
+    font-size: 28px;
 }
 
 .subtitulo {
     margin: 0 0 15px 0;
     color: #4a5568;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -48,11 +53,12 @@ body {
     padding: 12px 18px;
     border-radius: 8px;
     border-left: 4px solid #3182ce;
+    font-size: 14px;
 }
 
 .contenedor {
-    max-width: 900px;
-    margin: 30px auto;
+    max-width: 1000px;
+    margin: 20px auto;
 }
 
 .contenedor h2 {
@@ -62,21 +68,21 @@ body {
 }
 
 .galeria-retos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
 .tarjeta {
     background-color: #ffffff;
     padding: 25px 20px;
-    margin: 10px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     border: 1px solid #e2e8f0;
-    width: 260px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .tarjeta h3 {
@@ -107,6 +113,7 @@ body {
     border-radius: 8px;
     font-weight: 600;
     font-size: 14px;
+    transition: background-color 0.2s ease;
 }
 
 .boton-enlace:hover {
@@ -124,4 +131,37 @@ footer {
 footer a {
     color: #3182ce;
     text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .encabezado {
+        padding: 30px 20px;
+        margin: 20px auto;
+    }
+
+    .encabezado h1 {
+        font-size: 36px;
+    }
+
+    .subtitulo {
+        font-size: 18px;
+    }
+
+    .frase {
+        font-size: 16px;
+    }
+
+    .galeria-retos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .galeria-retos {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
