@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Tareas</title>
+  <link rel="stylesheet" href="kit.css">
+</head>
+<body>
+
+  <main class="contenedor">
+    <header class="barra-superior">
+      <span>Mis Tareas</span>
+    </header>
+
+    <section class="tarjeta tarjeta-encabezado">
+      <h1>Mis Tareas</h1>
+      <p>Organiza mis actividades</p>
+    </section>
+
+    <section class="tarjeta">
+      <h2 class="titulo-lista">Lista de Tareas</h2>
+
+      <form class="form-agregar">
+        <input type="text" placeholder="Escribe una tarea...">
+        <button type="submit" class="boton">Agregar</button>
+      </form>
+
+      <p class="alerta alerta-error oculto">Escribe una tarea antes de agregar.</p>
+
+      <ul class="lista-tareas">
+        <li class="tarea">
+          <div class="tarea-info">
+            <input type="checkbox" checked>
+            <span class="hecha">Estudiar para el quiz (HTML)</span>
+          </div>
+          <div class="tarea-acciones">
+            <span class="insignia insignia-completado">Completado</span>
+            <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+          </div>
+        </li>
+
+        <li class="tarea">
+          <div class="tarea-info">
+            <input type="checkbox">
+            <span>Hacer aseo</span>
+          </div>
+          <div class="tarea-acciones">
+            <span class="insignia insignia-pendiente">Pendiente</span>
+            <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+          </div>
+        </li>
+
+        <li class="tarea">
+          <div class="tarea-info">
+            <input type="checkbox">
+            <span>Cocinar</span>
+          </div>
+          <div class="tarea-acciones">
+            <span class="insignia insignia-pendiente">Pendiente</span>
+            <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+          </div>
+        </li>
+
+        <li class="tarea">
+          <div class="tarea-info">
+            <input type="checkbox" checked>
+            <span class="hecha">Ver tutorial de Python</span>
+          </div>
+          <div class="tarea-acciones">
+            <span class="insignia insignia-completado">Completado</span>
+            <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+          </div>
+        </li>
+
+        <li class="tarea">
+          <div class="tarea-info">
+            <input type="checkbox">
+            <span>Comprar algo en la tienda</span>
+          </div>
+          <div class="tarea-acciones">
+            <span class="insignia insignia-pendiente">Pendiente</span>
+            <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="tarjeta tarjeta-contador">
+      <p>Completadas 2 / 5</p>
+    </section>
+  </main>
+
+</body>
+</html>

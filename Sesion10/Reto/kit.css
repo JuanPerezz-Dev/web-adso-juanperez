@@ -1,0 +1,213 @@
+/* ========== 1. VARIABLES ========== */
+:root {
+  --principal: #2563eb;
+  --principal-hover: #1d4ed8;
+  --secundario: #64748b;
+  --peligro: #dc2626;
+  --aviso: #d97706;
+  --info: #0284c7;
+  --exito-fondo: #dcfce7;
+  --error-fondo: #fee2e2;
+  --aviso-fondo: #fef3c7;
+  --info-fondo: #e0f2fe;
+  --texto: #1f2937;
+  --texto-suave: #6b7280;
+  --fondo: #ffffff;
+  --borde: #d1d5db;
+}
+
+/* ========== 2. BASE ========== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+  max-width: 600px;
+  line-height: 1.5;
+  color: var(--texto);
+  background-color: var(--fondo);
+}
+
+a {
+  color: var(--principal);
+}
+
+small {
+  color: var(--texto-suave);
+}
+
+input {
+  display: block;
+  padding: 6px 10px;
+  border: 1px solid var(--borde);
+  border-radius: 4px;
+}
+
+:focus-visible {
+  outline: 2px solid #ffb300;
+  outline-offset: 2px;
+}
+
+/* ========== 3. COMPONENTES ========== */
+.paleta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.muestra {
+  padding: 12px 16px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.color-principal {
+  background-color: var(--principal);
+}
+
+.color-secundario {
+  background-color: var(--secundario);
+}
+
+.color-peligro {
+  background-color: var(--peligro);
+}
+
+.color-aviso {
+  background-color: var(--aviso);
+}
+
+.color-info {
+  background-color: var(--info);
+}
+
+.boton {
+  padding: 6px 12px;
+  border: 1px solid var(--principal);
+  border-radius: 4px;
+  background-color: var(--principal);
+  color: #ffffff;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.boton:hover {
+  background-color: var(--principal-hover);
+}
+
+.boton-secundario {
+  background-color: transparent;
+  color: var(--principal);
+}
+
+.boton-peligro {
+  border-color: var(--peligro);
+  background-color: var(--peligro);
+  color: #ffffff;
+}
+
+.boton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.alerta {
+  padding: 8px 12px;
+  margin: 8px 0;
+  border-left: 4px solid;
+  border-radius: 4px;
+}
+
+.alerta-exito {
+  border-color: #16a34a;
+  background-color: var(--exito-fondo);
+}
+
+.alerta-error {
+  border-color: var(--peligro);
+  background-color: var(--error-fondo);
+}
+
+.alerta-aviso {
+  border-color: var(--aviso);
+  background-color: var(--aviso-fondo);
+}
+
+.alerta-info {
+  border-color: var(--info);
+  background-color: var(--info-fondo);
+}
+
+.insignia {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.insignia-nuevo {
+  background-color: var(--info-fondo);
+  color: var(--info);
+}
+
+.insignia-oferta {
+  background-color: var(--aviso-fondo);
+  color: var(--aviso);
+}
+
+.insignia-agotado {
+  background-color: var(--peligro);
+  color: #ffffff;
+}
+
+/* ========== 4. ESTADOS ========== */
+.oculto {
+  display: none !important;
+}
+
+.activo {
+  background-color: var(--principal);
+  color: #ffffff;
+}
+
+.hecha {
+  color: var(--texto-suave);
+  text-decoration: line-through;
+}
+
+input.error {
+  border-color: var(--peligro);
+  background-color: var(--error-fondo);
+}
+
+small.error {
+  display: block;
+  color: var(--peligro);
+}
+
+.cargando {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--texto-suave);
+}
+
+.cargando::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--borde);
+  border-top-color: var(--principal);
+  border-radius: 50%;
+  animation: girar 0.8s linear infinite;
+}
+
+@keyframes girar {
+  to {
+    transform: rotate(360deg);
+  }
+}
