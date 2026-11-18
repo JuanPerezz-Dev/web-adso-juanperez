@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repostería Doña Gloria - Tortas y Postres Caseros en Medellín</title>
+    <meta name="description" content="Tortas y postres caseros hechos con amor en Medellín. Recetas tradicionales, ingredientes frescos y entregas a domicilio.">
+    <meta property="og:title" content="Repostería Doña Gloria - Tortas y Postres Caseros en Medellín">
+    <meta property="og:description" content="Tortas y postres caseros hechos con amor en Medellín. Recetas tradicionales, ingredientes frescos y entregas a domicilio.">
+    <meta property="og:image" content="https://juanperezz-dev.github.io/web-adso-juanperez/sesion11/reto/img/portada.webp">
+    <meta property="og:url" content="https://juanperezz-dev.github.io/web-adso-juanperez/sesion11/reto/">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="encabezado">
+        <p class="logo">Repostería Doña Gloria</p>
+        <nav aria-label="Navegación principal">
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#como-pedir">Cómo pedir</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero contenedor" id="inicio">
+            <div class="hero-info">
+                <h1>Tortas y postres caseros hechos con amor</h1>
+                <p>Endulzamos tus fechas especiales en Medellín con recetas tradicionales, ingredientes frescos y entrega a domicilio.</p>
+                <div class="hero-acciones">
+                    <a href="https://wa.me/573001234567" class="boton" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+                    <a href="#modal-promo" class="boton boton-secundario">Ver Promoción</a>
+                </div>
+            </div>
+            <div class="hero-imagen">
+                <img src="img/portada.webp" alt="Tarta artesanal de chocolate y fresas" width="600" height="441" loading="lazy">
+            </div>
+        </section>
+
+        <section class="contenedor seccion" id="beneficios">
+            <h2>Nuestros Beneficios</h2>
+            <div class="beneficios">
+                <article class="beneficio tarjeta-insignia">
+                    <span class="insignia-esquina">Popular</span>
+                    <h3>100% Fresco y Natural</h3>
+                    <p>Elaboramos cada pedido el mismo día con frutas frescas seleccionadas y sin conservantes artificiales.</p>
+                </article>
+                <article class="beneficio">
+                    <h3>Recetas Tradicionales</h3>
+                    <p>Disfruta del auténtico sabor casero y la textura suave que solo una receta familiar puede brindar.</p>
+                </article>
+                <article class="beneficio">
+                    <h3>Diseños Personalizados</h3>
+                    <p>Adaptamos los colores, sabores y decoraciones temáticas para cumpleaños, aniversarios y reuniones.</p>
+                </article>
+                <article class="beneficio">
+                    <h3>Domicilio Seguro</h3>
+                    <p>Transportamos tu pedido en cajas especiales para que llegue perfecto a tu casa en todo el Valle de Aburrá.</p>
+                </article>
+                <article class="beneficio">
+                    <h3>Precios Accesibles</h3>
+                    <p>Calidad artesanal superior con porciones generosas y precios que se ajustan a tu presupuesto.</p>
+                </article>
+                <article class="beneficio">
+                    <h3>Empaque para Regalo</h3>
+                    <p>Todos nuestros postres vienen listos para sorprender con una presentación delicada y tarjeta personalizada.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="contenedor seccion" id="como-pedir">
+            <h2>¿Cómo pedir?</h2>
+            <ol class="pasos">
+                <li class="paso">
+                    <h3>Elige tu postre favorito</h3>
+                    <p>Revisa nuestras opciones de tortas temáticas, postres en vaso, tartaletas o galletas artesanales.</p>
+                </li>
+                <li class="paso">
+                    <h3>Escríbenos a WhatsApp</h3>
+                    <p>Indícanos la cantidad de porciones, el sabor preferido, la fecha y la dirección de entrega.</p>
+                </li>
+                <li class="paso">
+                    <h3>Confirma tu pedido</h3>
+                    <p>Aparta tu fecha realizando el anticipo por transferencia a través de Nequi, Bancolombia o Daviplata.</p>
+                </li>
+                <li class="paso">
+                    <h3>Recibe y disfruta</h3>
+                    <p>Te entregamos tu pedido fresco y puntual en la puerta de tu hogar para celebrar con tu familia.</p>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <div id="modal-promo" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+        <div class="modal-contenido">
+            <a href="#cerrar" class="modal-cerrar" aria-label="Cerrar ventana modal">&times;</a>
+            <h3 id="modal-titulo">Promoción del Mes</h3>
+            <p>Por compras superiores a $50.000 en tortas o postres familiares, recibe completamente gratis una caja con 4 mini tartaletas caseras de frutas.</p>
+            <a href="https://wa.me/573001234567" class="boton" target="_blank" rel="noopener">Pedir con promoción</a>
+        </div>
+    </div>
+
+    <a href="https://wa.me/573001234567" class="boton-flotante" aria-label="Contactar por WhatsApp al 573001234567" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.586 1.761.884 2.791.884 3.179 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.768-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.044c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.158.57 4.184 1.564 5.942l-1.564 5.714 5.864-1.538c1.701.929 3.655 1.458 5.736 1.458 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/>
+        </svg>
+        <span>WhatsApp</span>
+    </a>
+
+    <footer class="pie" id="contacto">
+        <div class="contenedor pie-contenido">
+            <h3>Repostería Doña Gloria</h3>
+            <p><strong>Ubicación:</strong> Medellin</p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/573001234567" target="_blank" rel="noopener">+57 300 123 4567</a></p>
+            <p><strong>Instagram:</strong> <a href="https://instagram.com/reposteriadonagloria" target="_blank" rel="noopener">@reposteriadonagloria</a></p>
+            <p><strong>Correo:</strong> <a href="mailto:reposteriadonagloria@gmail.com">reposteriadonagloria@gmail.com</a></p>
+            <p><strong>Horario de atención:</strong> Lunes a Sábado de 8:00 a.m. a 6:00 p.m.</p>
+            <p class="derechos">&copy; 2026 Repostería Doña Gloria. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
