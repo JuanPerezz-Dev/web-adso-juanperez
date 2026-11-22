@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparativa Sesión 8 vs Sesión 13</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main class="contenedor">
+    <header class="encabezado-pagina">
+      <span class="insignia-top">Sesión 13 • Tarea</span>
+      <h1>Comparativa: Sesión 8 vs Sesión 13</h1>
+    </header>
+
+    <section>
+      <h2>1. Capturas de Lighthouse</h2>
+      <div class="galeria-capturas">
+        <article class="caja-captura s8">
+          <h3>Sesión 8 (CSS propio)</h3>
+          <div class="marco-imagen">
+            <img src="img/lighthouse-sesion08.webp" alt="Lighthouse Sesión 8" width="1024" height="523" loading="lazy">
+          </div>
+        </article>
+
+        <article class="caja-captura s13">
+          <h3>Sesión 13 (Bootstrap)</h3>
+          <div class="marco-imagen">
+            <img src="img/lighthouse-sesion13.webp" alt="Lighthouse Sesión 13" width="1024" height="523" loading="lazy">
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>2. Tabla comparativa</h2>
+      <div class="tabla-envoltura">
+        <table>
+          <thead>
+            <tr>
+              <th>Criterio</th>
+              <th>Sesión 8 (CSS propio)</th>
+              <th>Sesión 13 (Bootstrap)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Puntaje de Rendimiento</td>
+              <td><span class="nota nota-alta">99</span></td>
+              <td><span class="nota nota-alta">94</span></td>
+            </tr>
+            <tr>
+              <td>Accesibilidad</td>
+              <td><span class="nota nota-alta">93</span></td>
+              <td><span class="nota nota-alta">95</span></td>
+            </tr>
+            <tr>
+              <td>Buenas prácticas</td>
+              <td><span class="nota nota-alta">96</span></td>
+              <td><span class="nota nota-alta">100</span></td>
+            </tr>
+            <tr>
+              <td>SEO</td>
+              <td><span class="nota nota-alta">91</span></td>
+              <td><span class="nota nota-alta">100</span></td>
+            </tr>
+            <tr>
+              <td>Líneas de CSS escritas</td>
+              <td><strong>282</strong> líneas</td>
+              <td><strong>65</strong> líneas</td>
+            </tr>
+            <tr>
+              <td>Qué tan única se ve</td>
+              <td>Muy única (diseño propio a la medida)</td>
+              <td>Estándar (aspecto típico de Bootstrap)</td>
+            </tr>
+            <tr>
+              <td>Qué tan fácil fue hacerla responsive</td>
+              <td>Difícil (requiere media queries manuales)</td>
+              <td>Muy fácil (utilidades col y row en el HTML)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>3. Conclusión</h2>
+      <div class="caja-conclusion">
+        <p>Para el proyecto final usaremos nuestro propio kit de estilos. Aunque Bootstrap ahorra tiempo al hacer la página responsive y montar componentes rápidos, nuestro propio kit nos permite tener un diseño único que no parece una plantilla, nos da un rendimiento de 99 sin cargar librerías pesadas que no usamos, y nos ayuda a aplicar directamente lo aprendido en ADSO.</p>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

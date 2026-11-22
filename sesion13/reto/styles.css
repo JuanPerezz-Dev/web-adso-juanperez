@@ -1,0 +1,64 @@
+:root {
+  --color-marca: #b91c1c;
+  --color-marca-oscuro: #991b1b;
+  --color-fondo-suave: #fffaf5;
+  --color-tarjeta: #fff1eb;
+  --color-texto: #2d231e;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  color: var(--color-texto);
+  background-color: #ffffff;
+}
+
+.bg-marca {
+  background-color: var(--color-marca) !important;
+}
+
+.bg-marca-suave {
+  background-color: var(--color-fondo-suave) !important;
+}
+
+.text-marca {
+  color: var(--color-marca) !important;
+}
+
+.tarjeta-marca {
+  background-color: var(--color-tarjeta);
+  border: 1px solid #f0ddd3;
+}
+
+.btn-primary,
+.btn-marca {
+  --bs-btn-color: #ffffff;
+  --bs-btn-bg: #b91c1c;
+  --bs-btn-border-color: #b91c1c;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #991b1b;
+  --bs-btn-hover-border-color: #991b1b;
+  --bs-btn-focus-shadow-rgb: 185, 28, 28;
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: #7f1d1d;
+  --bs-btn-active-border-color: #7f1d1d;
+  --bs-btn-disabled-color: #ffffff;
+  --bs-btn-disabled-bg: #b91c1c;
+  --bs-btn-disabled-border-color: #b91c1c;
+}
+
+.btn-outline-marca {
+  --bs-btn-color: #b91c1c;
+  --bs-btn-border-color: #b91c1c;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #b91c1c;
+  --bs-btn-hover-border-color: #b91c1c;
+  --bs-btn-focus-shadow-rgb: 185, 28, 28;
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: #991b1b;
+  --bs-btn-active-border-color: #991b1b;
+}
+
+.form-control:focus {
+  border-color: var(--color-marca);
+  box-shadow: 0 0 0 0.25rem rgba(185, 28, 28, 0.25);
+}
