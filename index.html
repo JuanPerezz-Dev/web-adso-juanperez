@@ -3,7 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio - Juan Perez</title>
+  <title>Portafolio - Juan Perez | Desarrollador Web ADSO</title>
+  <meta name="description" content="Portafolio de proyectos y retos de diseño web de Juan Perez, aprendiz ADSO en SENA CTMA Medellín.">
+  <meta property="og:title" content="Portafolio - Juan Perez | Desarrollador Web ADSO">
+  <meta property="og:description" content="Proyectos y retos de diseño web moderno, responsive y accesible desarrollados en ADSO - SENA CTMA.">
+  <meta property="og:image" content="https://juanperezz-dev.github.io/web-adso-juanperez/img/og-image.webp">
+  <meta property="og:url" content="https://juanperezz-dev.github.io/web-adso-juanperez/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="img/avatar.png" type="image/png">
+  <link rel="shortcut icon" href="img/avatar.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -11,92 +19,136 @@
 </head>
 <body>
 
-  <header class="encabezado">
-    <h1>Juan Perez</h1>
-    <p class="subtitulo">Aprendiz ADSO - SENA CTMA</p>
-    <p class="frase">"El fracaso es solo la oportunidad de comenzar de nuevo de forma mas inteligente"</p>
+  <header class="barra-navegacion">
+    <div class="contenedor-nav">
+      <a href="#inicio" class="logo-nav">Juan Perez</a>
+      <nav aria-label="Navegación principal">
+        <ul class="menu-nav">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main class="contenedor">
-    <h2>Mis Retos de Diseño Web</h2>
-    <div class="galeria-retos">
-
-      <div class="tarjeta">
-        <h3>Sesión 01</h3>
-        <p class="reto-titulo">Reto: Hoja de Vida Básica</p>
-        <p>Estructura básica de contenido en HTML con listas, enlaces e imágenes.</p>
-        <a href="sesion01/reto/index.html" class="boton-enlace">Ver Reto 1</a>
+  <main>
+    <section class="hero-seccion" id="inicio">
+      <div class="contenedor hero-contenido">
+        <h1>Juan Perez</h1>
+        <p class="rol-subtitulo">Desarrollador Web Junior | Aprendiz ADSO - SENA CTMA</p>
+        <p class="frase-hero">"El fracaso es solo la oportunidad de comenzar de nuevo de forma más inteligente"</p>
+        <div class="hero-botones">
+          <a href="#proyectos" class="boton">Ver proyectos</a>
+          <a href="#contacto" class="boton boton-secundario">Contactar</a>
+        </div>
       </div>
+    </section>
 
-      <div class="tarjeta">
-        <h3>Sesión 02</h3>
-        <p class="reto-titulo">Reto: PhoneStore Tecnología</p>
-        <p>Sitio web comercial multipágina con navegación entre páginas.</p>
-        <a href="sesion02/reto/index.html" class="boton-enlace">Ver Reto 2</a>
+    <section class="seccion-bloque" id="sobre-mi">
+      <div class="contenedor">
+        <h2>Sobre mí</h2>
+        <div class="tarjeta-sobre-mi">
+          <p>Soy aprendiz de Análisis y Desarrollo de Software (ADSO) en el SENA CTMA, Medellín. Me apasiona el desarrollo web y la creación de interfaces limpias, adaptables y accesibles utilizando estándares modernos de HTML5, CSS3 y JavaScript.</p>
+          <p>A lo largo de mi formación he construido diversos proyectos aplicando metodologías Mobile First, Flexbox, CSS Grid y optimización SEO.</p>
+        </div>
       </div>
+    </section>
 
-      <div class="tarjeta">
-        <h3>Sesión 03</h3>
-        <p class="reto-titulo">Reto: Hoja de Vida con Estilos</p>
-        <p>Aplicación de estilos con CSS, fuentes de Google y colores personalizados.</p>
-        <a href="sesion03/reto/index.html" class="boton-enlace">Ver Reto 3</a>
+    <section class="seccion-bloque" id="proyectos">
+      <div class="contenedor">
+        <h2>Proyectos Destacados</h2>
+        <div class="galeria-proyectos">
+
+          <article class="tarjeta-proyecto">
+            <div class="contenedor-captura">
+              <img src="img/preview-sesion06.webp" alt="Captura del proyecto Vitrina Veterinaria" width="800" height="500" loading="lazy">
+            </div>
+            <div class="info-proyecto">
+              <h3>Vitrina Veterinaria</h3>
+              <p>Catálogo comercial interactivo de productos para mascotas con tarjetas estructuradas en Flexbox y diseño adaptable.</p>
+              <div class="acciones-proyecto">
+                <a href="sesion06/reto/index.html" class="boton" target="_blank" rel="noopener">Ver</a>
+                <a href="https://github.com/JuanPerezz-Dev/web-adso-juanperez/tree/main/sesion06/reto" class="boton boton-secundario" target="_blank" rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto">
+            <div class="contenedor-captura">
+              <img src="img/preview-sesion07.webp" alt="Captura del proyecto Tablero de Control Café Aroma" width="800" height="500" loading="lazy">
+            </div>
+            <div class="info-proyecto">
+              <h3>Tablero de Control Café Aroma</h3>
+              <p>Panel administrativo con indicadores comerciales, galería de productos y áreas de plantilla maquetadas con CSS Grid.</p>
+              <div class="acciones-proyecto">
+                <a href="sesion07/reto/index.html" class="boton" target="_blank" rel="noopener">Ver</a>
+                <a href="https://github.com/JuanPerezz-Dev/web-adso-juanperez/tree/main/sesion07/reto" class="boton boton-secundario" target="_blank" rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto">
+            <div class="contenedor-captura">
+              <img src="img/preview-sesion08.webp" alt="Captura del proyecto Landing Responsive Repostería Doña Gloria" width="800" height="500" loading="lazy">
+            </div>
+            <div class="info-proyecto">
+              <h3>Landing Responsive Repostería</h3>
+              <p>Página de presentación para emprendimiento gastronómico desarrollada con enfoque Mobile First y rejilla CSS de beneficios.</p>
+              <div class="acciones-proyecto">
+                <a href="sesion08/reto/index.html" class="boton" target="_blank" rel="noopener">Ver</a>
+                <a href="https://github.com/JuanPerezz-Dev/web-adso-juanperez/tree/main/sesion08/reto" class="boton boton-secundario" target="_blank" rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto">
+            <div class="contenedor-captura">
+              <img src="img/preview-sesion11.webp" alt="Captura del proyecto Landing con Posicionamiento y SEO" width="800" height="500" loading="lazy">
+            </div>
+            <div class="info-proyecto">
+              <h3>Landing Avanzada con Posicionamiento y SEO</h3>
+              <p>Landing page con barra de navegación sticky, botón flotante de WhatsApp, ventana modal :target e imágenes optimizadas en WebP.</p>
+              <div class="acciones-proyecto">
+                <a href="sesion11/reto/index.html" class="boton" target="_blank" rel="noopener">Ver</a>
+                <a href="https://github.com/JuanPerezz-Dev/web-adso-juanperez/tree/main/sesion11/reto" class="boton boton-secundario" target="_blank" rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
       </div>
+    </section>
 
-      <div class="tarjeta">
-        <h3>Sesión 04</h3>
-        <p class="reto-titulo">Reto: Tarjeta de Perfil</p>
-        <p>Tarjeta de perfil centrada con modelo de caja y modo claro/oscuro.</p>
-        <a href="sesion04/reto/index.html" class="boton-enlace">Ver Reto 4</a>
+    <section class="seccion-bloque" id="contacto">
+      <div class="contenedor">
+        <h2>Contacto</h2>
+        <div class="tarjeta-contacto">
+          <p>¿Te interesa colaborar o conocer más sobre mis proyectos? Puedes comunicarte conmigo a través de:</p>
+          <div class="enlaces-contacto">
+            <a href="mailto:juanperez301207@gmail.com" class="boton-contacto">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+              <span>juanperez301207@gmail.com</span>
+            </a>
+            <a href="https://github.com/JuanPerezz-Dev" class="boton-contacto" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+              <span>GitHub: JuanPerezz-Dev</span>
+            </a>
+          </div>
+        </div>
       </div>
-
-      <div class="tarjeta">
-        <h3>Sesión 05</h3>
-        <p class="reto-titulo">Reto: Formulario SENA</p>
-        <p>Formulario de inscripción SENA.</p>
-        <a href="sesion05/reto/index.html" class="boton-enlace">Ver Reto 5</a>
-      </div>
-
-      <div class="tarjeta">
-        <h3>Sesión 06</h3>
-        <p class="reto-titulo">Reto: Vitrina Veterinaria</p>
-        <p>Vitrina de productos con Flexbox y diseño adaptable.</p>
-        <a href="sesion06/reto/index.html" class="boton-enlace">Ver Reto 6</a>
-      </div>
-
-      <div class="tarjeta">
-        <h3>Sesión 07</h3>
-        <p class="reto-titulo">Reto: Tablero de Control Café</p>
-        <p>Tablero de control con CSS Grid, áreas y cuadrícula adaptable.</p>
-        <a href="sesion07/reto/index.html" class="boton-enlace">Ver Reto 7</a>
-      </div>
-
-      <div class="tarjeta">
-        <h3>Sesión 08</h3>
-        <p class="reto-titulo">Reto: Landing Responsive</p>
-        <p>Landing page con enfoque Mobile First, media queries y CSS Grid adaptable.</p>
-        <a href="sesion08/reto/index.html" class="boton-enlace">Ver Reto 8</a>
-      </div>
-
-      <div class="tarjeta">
-        <h3>Sesión 10</h3>
-        <p class="reto-titulo">Reto: Kit de Diseño CSS</p>
-        <p>Kit de componentes modulares con variables, base, componentes y estados.</p>
-        <a href="sesion10/reto/index.html" class="boton-enlace">Ver Reto 10</a>
-      </div>
-
-      <div class="tarjeta">
-        <h3>Sesiones 11 y 12</h3>
-        <p class="reto-titulo">Reto: Posicionamiento y SEO</p>
-        <p>Landing page avanzada con sticky header, botón flotante, modal :target, etiquetas Open Graph y WebP.</p>
-        <a href="sesion11/reto/index.html" class="boton-enlace">Ver Reto 11 y 12</a>
-      </div>
-
-    </div>
+    </section>
   </main>
 
   <footer>
-    <p>Juan Perez - Medellín, Colombia</p>
-    <a href="mailto:juanperez301207@gmail.com">juanperez301207@gmail.com</a>
+    <div class="contenedor pie-contenedor">
+      <p>&copy; 2026 Juan Perez - ADSO SENA CTMA | Medellín, Colombia</p>
+    </div>
   </footer>
 
 </body>
